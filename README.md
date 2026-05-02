@@ -56,3 +56,6 @@ const RemoteIP = req.headers['cf-connecting-ip'] ||
                      req.headers['x-forwarded-for'] || 
                      req.socket.remoteAddress;
 ```
+
+# Comparing
+* We remain much faster then other frameworks such as SocketIO, Colyseus, ... as our overhead is minimal, lower states and execution operations
