@@ -1,6 +1,16 @@
 # com.transport
 Custom high performance &amp; secure networking for the web, used in the new Shipz source
 
+# Feature(s)
+* Maximized high-performance web transport with configurable options and easily packet sending over binary
+* Connection heartbeat(s)
+* Flood protection
+* Exploit, XSS, SQL protection
+* In-Line challenge to prevent bots
+* Binary transport (base en/decoding)
+* Supporting thousend(s) of connections, packets single threaded
+* Custom handshake webserver + content delivery + transport all-in-one
+
 # Setup server
 * git clone repo name or download manual
 * cd reponame123
