@@ -66,3 +66,8 @@ const RemoteIP = req.headers['cf-connecting-ip'] ||
 * The web cannot use pure TCP or UDP like desktop applications, WebSockets was released for this purpose.
 * The Danger: You definitely need to be in control and know what you are doing with it as a server, because once you go public, everyone has access and can flood it with bots and exploits. To prevent this, you need to implement your own authentication or protection measures. It is like leaving a door wide open allowing everyone/every connection or closing it with a small hole for real people.
 * If you want to create your own web application with real-time networking, use WebSockets, if you want to create a direct desktop app or game, use pure TCP or UDP protocols.
+
+# Preview
+* If you did everything correctly you will see something like this depending on your app and configs:
+<img width="526" height="266" alt="image" src="https://github.com/user-attachments/assets/ca6f2aef-b956-4501-b806-8759ab7e8098" />
+
