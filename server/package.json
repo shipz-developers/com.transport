@@ -1,0 +1,38 @@
+{
+  "name": "com.transport",
+  "version": "1.0.0",
+  "description": "Open Source com.transport - web communications for everyone",
+  "type": "esm",
+  "keywords": [
+    "web",
+    "transport",
+    "socket",
+    "stream",
+    "tcp",
+    "communication",
+    "gaming",
+    "low-latency"
+  ],
+  "homepage": "https://github.com/shipz-developers/com.transport#readme",
+  "bugs": {
+    "url": "https://github.com/shipz-developers/com.transport/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shipz-developers/com.transport.git"
+  },
+  "license": "MIT",
+  "author": "Shipz Developers",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "ws": "^8.20.0"
+  }
+}
