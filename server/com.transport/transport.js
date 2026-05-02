@@ -6,6 +6,7 @@ import { sid } from './crypto/sid.js';
 import { CleanupClient } from './entities/cleanup.js';
 import { Heartbeat } from './entities/heartbeat.js';
 import { ChallengeManager } from './entities/challenge.js';
+import { NewPacketHandler } from '../GamePacketHandler.js';
 
 export const Transport = {
     server: null,
