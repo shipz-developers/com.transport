@@ -1,5 +1,6 @@
 # com.transport
-Custom high performance &amp; secure networking for the web, used in the new Shipz source
+* Custom high performance &amp; secure networking for the web, used in the new Shipz source
+* Node.js required > both client and server should run as module, esm
 
 # Feature(s)
 * Maximized high-performance web transport with configurable options and easily packet sending over binary
@@ -51,7 +52,7 @@ Make sure the packet for CODES['xx'] exists at server/com.transport/data/com.cod
 * Use this transport app behind Cloudflare, set SSL to flexible so you dont have to deal with attackers or heavy encryption.
 
 * Cf-IP header, you may have to edit line 32 at transport.js to get CF-Connecting-IP header
-Example: 
+This example line will attempt to find an available IP header:
 ```javascript
 const RemoteIP = req.headers['cf-connecting-ip'] || 
                      req.headers['x-forwarded-for'] || 
@@ -71,3 +72,7 @@ const RemoteIP = req.headers['cf-connecting-ip'] ||
 * If you did everything correctly you will see something like this depending on your app and configs:
 <img width="526" height="266" alt="image" src="https://github.com/user-attachments/assets/ca6f2aef-b956-4501-b806-8759ab7e8098" />
 
+# Recommed Providers
+* OVH - DDoS Protection
+* Hetzner - Budget & Balanced (low ddos protection but stable if your app runs using critical load & packets)
+* Recommed: LXC virtual machine, some providers offer LXC which uses the host kernel pushing your VM's networking to the max level and much faster
