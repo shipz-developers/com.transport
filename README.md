@@ -59,3 +59,9 @@ const RemoteIP = req.headers['cf-connecting-ip'] ||
 
 # Comparing
 * We remain much faster then other frameworks such as SocketIO, Colyseus, ... as our overhead is minimal, lower states and execution operations
+
+# What are WebSocket(s) / WebTransport
+* The WebSocket, which saw massive growth starting in 2011, is now used in daily life. It establishes an HTTP(S) handshake requesting a WebSocket upgrade, to which a fixed TCP connection is established, allowing packets to be sent to the server or reversed. This is a good solution for real-time applications and for transmitting data faster than a heavy, full HTTP(S) request.
+* The web cannot use pure TCP or UDP like desktop applications, WebSockets was released for this purpose.
+* The Danger: You definitely need to be in control and know what you are doing with it as a server, because once you go public, everyone has access and can flood it with bots and exploits. To prevent this, you need to implement your own authentication or protection measures. It is like leaving a door wide open allowing everyone/every connection or closing it with a small hole for real people.
+* If you want to create your own web application with real-time networking, use WebSockets, if you want to create a direct desktop app or game, use pure TCP or UDP protocols.
