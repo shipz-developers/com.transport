@@ -24,9 +24,9 @@ Custom high performance &amp; secure networking for the web, used in the new Shi
 * See client example
 
 # Modify
-* How to modify or change the location of "HandlePackets" packet handler at your module script? Go to server/com.transport/transport.js find the same function name and change the function name or/and its path to a custom module script.
-* How to add custom packet(s) > Go to server/com.transport/data/com.codes.js and add any packet name with its packet number. The client will receive this by default and able to communicate
-* For your client module script you can do the same as mentioned above.
+* (client) How to modify or change the location of "HandlePackets" packet handler at your module script? Go to client/com.transport/transport.js find the same function name and change the function name or/and its path to a custom module script.
+* (server) How to add custom packet(s) > Go to server/com.transport/data/com.codes.js and add any packet name with its packet number. The client will receive this by default and able to communicate
+* (server) For your server you can do the same as mentioned above.
 
 # Receiving and sending packet(s) at server
 * See ./server/com.transport/GamePacketHandler.js
