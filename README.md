@@ -22,6 +22,7 @@ Custom high performance &amp; secure networking for the web, used in the new Shi
 
 # Setup Client
 * See client example
+* Want to run the client using the webserver? enable serve_content in .env and put all content inside the client folder into /server/public/ note it is not recommed for production as heavy web traffic will decrease performance. So the client should be ran on a seperate webhosting/webserver > Have a own server? OpenLiteSpeed with LSCache is recommed
 
 # Modify
 * (client) How to modify or change the location of "HandlePackets" packet handler at your module script? Go to client/com.transport/transport.js find the same function name and change the function name or/and its path to a custom module script.
